@@ -1,0 +1,18 @@
+#reader {
+  border: 4px solid #3b82f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#result {
+  transition: all 0.3s ease-in-out;
+}
+
+#result.success {
+  color: #10b981;
+}
+
+#result.error {
+  color: #ef4444;
+}
