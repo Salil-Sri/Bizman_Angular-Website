@@ -1,5 +1,14 @@
 <main>
-    <div id="reader"></div>
-    <div id="result"></div>
-  </main>
+  <button (click)="toggleScanner()">
+    {{ isScanning ? 'Stop Scan' : 'Start Scan' }}
+  </button>
+
+  <div id="reader"></div>
   
+  <div>
+    <ul>
+      <li *ngFor="let code of scannedCodes">{{ code }}</li>
+    </ul>
+    <button (click)="resetList()">Reset List</button>
+  </div>
+</main>
